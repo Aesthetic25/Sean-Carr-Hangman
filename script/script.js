@@ -39,7 +39,7 @@ class Hangman{
         this.clear();
     }
     clear(){
-        this.mysteryWordText.innerHTML = "_ _ _ _"
+        this.mysteryWordText.innerHTML = "_ _ _ _";
         this.lives = 10;
         this.livesText.innerHTML = `You have ${this.lives} lives left.`;
         this.resetButtonColor();
@@ -59,9 +59,7 @@ class Hangman{
         })
     }
     changeButtonColor(button){
-        if(button.style.backgroundColor == "rgb(255, 255, 255)"){
-            return true;
-        }
+        if(button.style.backgroundColor == "rgb(255, 255, 255)") return true;
         button.style.backgroundColor = "#fff";
         button.style.color = "#187bcd";
     }
@@ -76,13 +74,7 @@ class Hangman{
         let chosenCategory = randomArrayElement(categories);
         let underscorePrinter = (array)=>{
             let finalUnderscoreString = [];
-            for(let i=0; i<array.length; i++){
-                if(array[i] === "-"){
-                    finalUnderscoreString.push("- ")
-                }else{
-                    finalUnderscoreString.push("_ ")
-                }
-            }
+            array.forEach((arrayVal)=> (arrayVal === "-") ? (finalUnderscoreString.push("- ")) : (finalUnderscoreString.push("_ ")));
             return finalUnderscoreString;
         }
         switch(chosenCategory){
@@ -113,26 +105,19 @@ class Hangman{
             this.clear();
             return true;
         }
-        if(buttonElement.style.backgroundColor == "#fff"){return}
+        if(buttonElement.style.backgroundColor == "#fff") return;
         let temporaryTextPlaceholder = this.mysteryWordText.innerHTML.replace(/\s/g, "").split("");
         if(this.chosenWord.includes(buttonLetter) || this.chosenWord.includes(buttonLetter.toLowerCase())){
-            for(let i=0; i<this.chosenWord.length; i++){
-                if(buttonLetter == this.chosenWord[i]){
-                    temporaryTextPlaceholder[i] = this.chosenWord[i];
-                }else if(buttonLetter.toLowerCase() == this.chosenWord[i]){
-                    temporaryTextPlaceholder[i] = this.chosenWord[i];
-                }
-            }
+            this.chosenWord.forEach((arrayVal, arrayIndex) =>{
+                if(buttonLetter == arrayVal) temporaryTextPlaceholder[arrayIndex] = arrayVal;
+                if(buttonLetter.toLowerCase() == arrayVal) temporaryTextPlaceholder[arrayIndex] = arrayVal;
+            });
         this.mysteryWordText.innerHTML = temporaryTextPlaceholder.join(" ")
         }else{
             this.checkButtonColor;
             console.log("wrong letter")//
             this.lives--;
-            if(this.lives == 1){
-                this.livesText.innerHTML = `You have ${this.lives} life left.`;
-            } else{
-                this.livesText.innerHTML = `You have ${this.lives} lives left.`;
-            }
+            (this.lives == 1) ? (this.livesText.innerHTML = `You have ${this.lives} life left.`) : (this.livesText.innerHTML = `You have ${this.lives} lives left.`);
         }
         if(this.lives == 0){
             setTimeout(() => {alert(`Game over, the word was "${this.chosenWord.join("")}"`)}, 100);
@@ -144,7 +129,7 @@ class Hangman{
             return;
         }else{
             console.log(this.chosenWord.join(""))//
-            setTimeout(() => {alert(`You win, the word was "${this.chosenWord.join("")}"`)}, 100);
+            setTimeout(() => alert(`You win, the word was "${this.chosenWord.join("")}"`), 100);
             this.status = "disabled";
             this.clear();
             return;
@@ -154,11 +139,11 @@ class Hangman{
 //creates new instance of the class "Hangman"
 const hangman = new Hangman(categoryText, mysteryWordText, livesText, playButton, restartButton, alphabetButtons, countriesList, animalsList, namesList);
 //adding event listeners to the buttons.
-playButton.addEventListener("click", ()=>{hangman.play()});
-restartButton.addEventListener("click", ()=>{hangman.clear()});
+playButton.addEventListener("click", ()=> hangman.play());
+restartButton.addEventListener("click", ()=> hangman.clear());
 alphabetButtons.forEach(button => {
         button.addEventListener('click', ()=>{
-            if(hangman.changeButtonColor(button)==true){return}
+            if(hangman.changeButtonColor(button)==true) return;
             hangman.changeButtonColor(button);
             hangman.alphabetButtonActivated(button.innerHTML, button);
         })
