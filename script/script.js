@@ -67,14 +67,14 @@ class Hangman{
         this.restart();
         this.status = "enabled"
         let categories = ["countries", "animals", "names"];
-        let randomArrayElement = (array)=>{
+        let randomArrayElement = array =>{
             let randomPickedNumber = Math.floor(Math.random() * array.length);
             return array[randomPickedNumber];
         };
         let chosenCategory = randomArrayElement(categories);
-        let underscorePrinter = (array)=>{
+        let underscorePrinter = array =>{
             let finalUnderscoreString = [];
-            array.forEach((arrayVal)=> (arrayVal === "-") ? (finalUnderscoreString.push("- ")) : (finalUnderscoreString.push("_ ")));
+            array.forEach(arrayVal => (arrayVal === "-") ? (finalUnderscoreString.push("- ")) : (finalUnderscoreString.push("_ ")));
             return finalUnderscoreString;
         };
         switch(chosenCategory){
@@ -120,7 +120,7 @@ class Hangman{
             (this.lives == 1) ? (this.livesText.innerHTML = `You have ${this.lives} life left.`) : (this.livesText.innerHTML = `You have ${this.lives} lives left.`);
         };
         if(this.lives == 0){
-            setTimeout(() => {alert(`Game over, the word was "${this.chosenWord.join("")}"`)}, 100);
+            setTimeout(() => alert(`Game over, the word was "${this.chosenWord.join("")}"`), 100);
             this.status = "disabled"
             this.clear();
             return;
