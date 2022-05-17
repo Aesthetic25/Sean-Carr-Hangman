@@ -20,9 +20,9 @@ function importJSON(file, arrayToAppendTo){
     });
 };
 //calls the function to push the json data to an array declared earlier.
-importJSON("https://seancarr1.github.io/Sean-Carr-Hangman/script/countries.json", countriesList);
-importJSON("https://seancarr1.github.io/Sean-Carr-Hangman/script/animals.json", animalsList);
-importJSON("https://seancarr1.github.io/Sean-Carr-Hangman/script/names.json", namesList);
+importJSON("./script/countries.json", countriesList);
+importJSON("./script/animals.json", animalsList);
+importJSON("./script/names.json", namesList);
 
 class Hangman{
     constructor(categoryText, mysteryWordText, livesText, playButton, restartButton, alphabetButtons,countries, animals, names){
