@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    font-family:'Roboto';
+}
+
+body{
+    background-color: #F5F7FA;
+}
+
+.aboutusupper{
+    background-color: #5175AE;
+    margin-top:-65px;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+.aboutusupper .inside{
+    width:73%;
+    display:flex;
+    align-items: center;
+
+}
+
+.aboutusupper #txt{
+    color:#F5F7FA;
+    text-align: left;
+    width:90%;
+}
+
+.abouttitle{
+    font-size:40px;
+    font-weight:550;
+    margin-bottom:20px;
+}
+.paragraph{
+    font-size:27.65px;
+    font-weight:300;
+}
+
+.aboutusupper img{
+    width: 580px;
+    height: 500px;
+}
+
+#meetourteam{
+    font-size:47px;
+    font-weight:bold;
+    color: #5175AE;
+    border-bottom:1px solid #64666B;
+    padding:10px;
+    width:48%;
+    margin:auto;
+    text-align:center;
+    margin-top:32px;
+    margin-bottom:32px;
+}
+
+.aboutuslower .inside #info{ 
+    display:flex;
+    align-items:center;
+    text-align:left;
+    margin:auto;
+    width:48%;
+    margin-bottom:50px;
+}
+
+.aboutuslower #info img{
+    width:250px;
+    height:250px;
+    margin-right:20px;
+    border:1px solid #64666B;
+}
+
+.aboutuslower #info #name{
+    font-size:32.18px;
+    font-weight:bold;
+    color:#101216;
+    margin-bottom:8px;
+}
+
+.aboutuslower #info p{
+    font-size:20px;
+    color:#64666B;
+    margin-bottom:8px;
+}
+
+.aboutuslower #info p1{
+    font-size:24px;
+    color:#383A3E;
+}

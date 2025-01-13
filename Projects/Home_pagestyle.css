@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    font-family:'Roboto';
+    background-color:#F5F7FA;
+}
+.homepagebody{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepagebody h1{
+    font-size: 61.74px;
+}
+.homepagebody p{
+    font-size:38.83px;
+    font-weight:normal;
+}
+
+.Signupbtn{
+    padding:25px 50px;
+    border-radius:20px;
+    border-color:#5175AE;
+    background-color:#5175AE   
+}
+.Signupbtn a{
+    color:#F5F7FA;
+    background-color:#5175AE;
+    font-weight:bold;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.homepage_img{
+    width:650px;
+    height:564px;
+}
+
+.hmpgtexts{
+    text-align:left;
+}

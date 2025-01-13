@@ -1,0 +1,65 @@
+*{
+    margin:0px;
+    font-family:'Roboto';
+    background-color:#F5F7FA;
+}
+
+#logimg{
+    width:560px;
+    height:540px;
+}
+
+.Loginpagebody{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loginpagebar{
+    width:430px;
+    height:360px;
+    border:1px solid #64666B;
+    border-radius:20px;
+    text-align:center;
+    padding: 50px;
+}
+
+.welcome{
+    font-size:23.04px;
+    font-weight:bold;
+    color:#5175AE;
+}
+
+.welctxt{
+    font-size:14px;
+    color:#64666B;
+}
+
+#input{
+    border-radius:20px;
+    padding: 10px;
+    padding-left:30px; 
+    padding-right: 120px;
+    margin-bottom:10px;
+}
+
+
+.Logtxt{
+    padding:10px 133px;
+    border-radius:30px;
+    border-color:#5175AE;
+    background-color: #5175AE;
+    color:#F5F7FA;
+    background-color:#5175AE;
+    border-color:#5175AE;
+    font-weight:bold;
+}
+
+.donthaveacc{
+    font-size: 12px;
+
+}
+.donthaveacc a{
+    text-decoration:none;
+    color:#5175AE
+}

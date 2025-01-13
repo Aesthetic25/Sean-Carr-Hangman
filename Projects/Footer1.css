@@ -1,0 +1,30 @@
+*{
+    font-family:'Roboto';
+}
+.footer{
+    padding: 30px;
+    background-color:#5175AE;
+    margin:auto;
+    border-radius:20px;
+}
+
+.footertexts{
+    background-color:#5175AE;
+    text-align: center;
+}
+
+.footertexts #largetext{
+    font-family: 'Roboto Condensed';
+    font-size:25px;
+    font-weight:bold;
+    color:#F5F7FA;
+    background-color:#5175AE;
+    
+}
+
+.footertexts #smalltext{
+    color:#F5F7FA;
+    background-color:#5175AE;
+    font-size: 12px;
+    font-weight:2px;
+}

@@ -1,0 +1,52 @@
+*{
+margin: 0;
+
+}
+h1 {
+    text-align:center;
+    background-color: red;
+    color:white;
+    font-family:Arial;
+    padding: 35px;
+}
+h2 {
+    text-align: center;
+    background-color:white;
+    font-family: arial;
+    padding: 10px;
+    margin-top:20px
+}
+p {
+    text-align:center;
+    font-family: arial;
+    margin-top: 20px;
+   
+}
+button {
+    text-align: center;
+    background-color: violet;
+    font-family: Arial;
+    color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.button {
+    text-align: center;
+}
+p1 { 
+    text-align:center;
+    background-color:green;
+    color:white;
+    font-family: arial;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    
+}
+
+
+    
+

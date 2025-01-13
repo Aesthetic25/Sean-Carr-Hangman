@@ -1,0 +1,59 @@
+*{
+    font-family:'Roboto';
+}
+.footer{
+    padding: 34px;
+    background-color:#5175AE;
+    margin:auto;
+    border-radius:20px;
+}
+
+.footertexts{
+    background-color:#5175AE;
+    text-align: center;
+    align-items: center;
+}
+
+.footertexts #largetext{
+    display:flex;
+    align-items: center;
+    margin-left:32%;
+}
+
+.footertexts #largetext .title{
+    font-family:'Roboto Condensed';
+    font-size:25px;
+    font-weight:bold;
+    color:#F5F7FA;
+    background-color:#5175AE;
+}
+
+
+
+.footertexts a{
+    text-decoration: none;
+    margin:10px;
+    font-size:16px;
+    color:#383A3E;
+    font-weight:5px;
+    
+}
+
+.footertexts #intext{
+    border: 1px #98B1D9 ;
+    border-radius:20px;
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+    background-color:#98B1D9;
+    
+}
+
+
+.footertexts #smalltext{
+    color:#F5F7FA;
+    background-color:#5175AE;
+    font-size: 12px;
+    font-weight:2px;
+    text-align:center;
+}
